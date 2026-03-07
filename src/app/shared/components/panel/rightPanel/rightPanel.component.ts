@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CheckboxComponent } from '../../checkbox/checbox.component';
+import { CheckboxComponent } from '../../checkbox/checkbox.component';
 
 @Component({
   selector: 'app-right-panel',
