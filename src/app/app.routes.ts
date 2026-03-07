@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { StartPage } from './startPage/startPage';
-import { MainPage } from './mainPage/mainPage';
+import { StartPage } from './shared/startPage/startPage';
+import { MainPage } from './shared/mainPage/mainPage';
 
 export const routes: Routes = [
   {
