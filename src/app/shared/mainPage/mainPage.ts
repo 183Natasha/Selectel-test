@@ -8,4 +8,10 @@ import { RightPanel } from '../components/panel/rightPanel/rightPanel.component'
   styleUrl: './mainPage.css',
   imports: [LeftPanel, RightPanel]
 })
-export class MainPage { }
+export class MainPage {
+  section:string = "1";
+  countSelectedItems: number = 11;
+  generalValue: number = 111;
+
+
+}

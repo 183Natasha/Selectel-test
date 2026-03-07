@@ -21,21 +21,19 @@ body {
   background-color: #fff;
 }
 
-
-
 .points {
   display: flex;
   gap: 50px;
 }
 
-.selected__items,
+/* .selected__items,
 .general__value,
 .section {
   display: flex;
   flex-direction: row;
   gap: 10px;
   justify-content: space-between;
-}
+} */
 
 .container {
   display: flex;
