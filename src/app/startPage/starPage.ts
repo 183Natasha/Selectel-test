@@ -3,7 +3,7 @@ import { ButtonComponent } from '../shared/components/button/button.component';
 
 @Component({
     selector: 'app-start',
-    imports: [ButtonComponent],
+  imports: [ButtonComponent],
     templateUrl: './startPage.html',
     styleUrl: './startPage.css'
 })
