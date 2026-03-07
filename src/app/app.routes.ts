@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { StartPage } from './shared/startPage/startPage';
-import { MainPage } from './shared/mainPage/mainPage';
 
 export const routes: Routes = [
   {
@@ -9,7 +8,6 @@ export const routes: Routes = [
   },
   {
     path: "main",
-    component: MainPage
-    // loadComponent: () => import('./mainPage/mainPage').then(m => m.MainPage)
+    loadComponent: () => import('./shared/mainPage/mainPage').then(m => m.MainPage)
   }
 ];
