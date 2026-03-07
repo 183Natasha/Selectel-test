@@ -5,7 +5,7 @@ import { ButtonComponent } from './shared/components/button/button.component';
   selector: 'app-root',
   imports: [ButtonComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'Selectel-test';
