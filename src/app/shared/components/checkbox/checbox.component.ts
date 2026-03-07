@@ -12,5 +12,10 @@ export class CheckboxComponent {
   ];
 
   selectedOption: string = '';
+  isVisible: boolean = true
 
+
+  toggleVisibility() {
+    this.isVisible = !this.isVisible;
+  }
 }
