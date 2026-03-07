@@ -1,0 +1,11 @@
+<div class="checkbox-container">
+  <div class="checkbox-item">
+    @for (option of optionsCheckbox; track option.value) {
+    <label>
+      <input type="checkbox" name="optionGroup" [value]="option.value" >
+      {{ option.label }}
+    </label>
+    }
+  </div>
+
+</div>
