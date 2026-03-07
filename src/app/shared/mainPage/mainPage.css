@@ -21,13 +21,16 @@ body {
   background-color: #fff;
 }
 
+
+
 .points {
   display: flex;
   gap: 50px;
 }
 
 .selected__items,
-.general__value {
+.general__value,
+.section {
   display: flex;
   flex-direction: row;
   gap: 10px;
