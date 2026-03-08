@@ -6,8 +6,6 @@ import { RouterModule } from '@angular/router';
   selector: 'app-start',
   imports: [ButtonComponent, RouterModule],
   templateUrl: './startPage.html',
-  styleUrl: './startPage.css'
+  styleUrl: './startPage.css',
 })
-export class StartPage {
-
-}
+export class StartPage {}

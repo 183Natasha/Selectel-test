@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Manrope';
+  /* Придумай название */
+  src: url('/font/web/Manrope-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* Чтобы текст не пропадал при загрузке */
+}
