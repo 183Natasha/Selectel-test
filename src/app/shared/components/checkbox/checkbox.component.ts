@@ -27,8 +27,6 @@ export class CheckboxComponent {
     }
     this.checkboxCounter = arr.length;
     this.totalValue = value;
-    console.log('counter  '+this.checkboxCounter)
-    console.log('totalValue  '+ this.totalValue)
 
     this.counterChange.emit(
       { counter: this.checkboxCounter, totalValue: this.totalValue }

@@ -16,7 +16,13 @@ export class MainPage {
 
   addItem(item: string) {
     this.section = item;
+    this.resetCounters();
   }
+
+  resetCounters(){
+    this.countSelectedItems = 0;
+    this.generalValue = 0;
+  };
 
   addCount(event: { counter: number; totalValue: number }) {
     this.countSelectedItems = event.counter;
