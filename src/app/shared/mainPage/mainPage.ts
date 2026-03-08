@@ -10,7 +10,7 @@ import { RightPanel } from '../components/panel/rightPanel/rightPanel.component'
   imports: [LeftPanel, RightPanel]
 })
 export class MainPage {
-  section:string = "1";
+  section:string = "";
   countSelectedItems: number = 11;
   generalValue: number = 111;
 

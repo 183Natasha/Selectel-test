@@ -3,13 +3,13 @@
     @if (optionsCheckbox && optionsCheckbox.length > 0) {
     @for (option of optionsCheckbox; track option.data) {
     <label>
-      <input type="checkbox" [value]="option.data">
+      <input type="checkbox" [value]="option.data" (change)= checkStatus(option) >
       {{ option.label }}
       <div class="checkbox_value">Value: {{ option.value }}</div>
     </label>
     }
     } @else {
-    <p>Нет данных для отображения</p>
+    <p>Для отображения данных выберите название раздела в левой панеле</p>
     }
   </div>
 </div>
