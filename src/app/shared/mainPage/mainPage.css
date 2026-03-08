@@ -59,3 +59,12 @@ body {
 }
 
 
+@media (max-width: 768px) {
+  .left__panel {
+    width: 200px;
+  }
+
+  .header__container {
+    flex-direction: column;
+  }
+}
