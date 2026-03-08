@@ -1,5 +1,3 @@
 <div >
-  <!-- <div>Right Panel (секция: {{ section() }})</div> -->
-  <app-checkbox  [optionsCheckbox] = "questionsList" ></app-checkbox>
-  <!-- <app-checkbox [optionsCheckbox]="questions2" ></app-checkbox> -->
+  <app-checkbox  [optionsCheckbox] = "questionsList"  (counterChange)="onCheckboxChange($event)"></app-checkbox>
 </div>

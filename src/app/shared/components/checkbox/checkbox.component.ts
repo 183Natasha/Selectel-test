@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, output } from '@angular/core';
 
 @Component({
   selector: 'app-checkbox',
@@ -8,18 +8,31 @@ import { Component, Input } from '@angular/core';
 export class CheckboxComponent {
   @Input() optionsCheckbox: { data: string, label: string, value: number, status: boolean }[] = [];
 
-  counter = 0
+  checkboxCounter: number = 0
+  totalValue: number= 0
+
+  counterChange = output<{ counter: number, totalValue: number }>();
 
   checkStatus(clickOption: { data: string, label: string, value: number, status: boolean }) {
-    clickOption.status=!clickOption.status;
-    let len=[]
+    clickOption.status = !clickOption.status;
+    let arr = []
+    let value = 0
     for (let el of this.optionsCheckbox) {
       if (el.status === true) {
-        len.push(el)
+        arr.push(el)
+        this.totalValue
+        value=value+el.value
+
       }
     }
-    this.counter=len.length
-    console.log(this.counter)
+    this.checkboxCounter = arr.length;
+    this.totalValue = value;
+    console.log('counter  '+this.checkboxCounter)
+    console.log('totalValue  '+ this.totalValue)
+
+    this.counterChange.emit(
+      { counter: this.checkboxCounter, totalValue: this.totalValue }
+    )
   }
-  selectedOption: string = '';
+
 }

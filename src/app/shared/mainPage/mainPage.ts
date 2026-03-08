@@ -11,12 +11,15 @@ import { RightPanel } from '../components/panel/rightPanel/rightPanel.component'
 })
 export class MainPage {
   section:string = "";
-  countSelectedItems: number = 11;
-  generalValue: number = 111;
+  countSelectedItems: number = 0;
+  generalValue: number = 0;
 
   addItem(item: string) {
-    // console.log('Получена секция:', item);
     this.section = item;
-    // console.log(this.section)
+  }
+
+  addCount(event: { counter: number; totalValue: number }) {
+    this.countSelectedItems = event.counter;
+    this.generalValue = event.totalValue;
   }
 }

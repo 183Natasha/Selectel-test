@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input , output} from '@angular/core';
 import { CheckboxComponent } from '../../checkbox/checkbox.component';
 
 @Component({
@@ -10,6 +10,7 @@ import { CheckboxComponent } from '../../checkbox/checkbox.component';
 })
 export class RightPanel {
   section = input<string>()
+  addCountEvent = output<{ counter: number; totalValue: number }>();
 
   questions1 = [
     { data: '1', label: 'Task 1', value: 10 , status: false},
@@ -31,6 +32,11 @@ export class RightPanel {
       return this.questions2;
     }
     return [];
+  }
+
+
+  onCheckboxChange(event: { counter: number, totalValue: number }) {
+    this.addCountEvent.emit(event);
   }
 
 }
