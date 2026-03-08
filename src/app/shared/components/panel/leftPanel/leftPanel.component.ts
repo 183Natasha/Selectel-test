@@ -11,10 +11,6 @@ export class LeftPanel {
   addItemEvent = output<string>();
 
   onRadioChange(value: string) {
-    // console.log('🟢 [LeftPanel] Получено значение от radio:', value);
-    // console.log('🟢 [LeftPanel] Пробрасываю наверх в main');
-
-    // Передаем событие дальше в MainPage
     this.addItemEvent.emit(value);
   }
 }

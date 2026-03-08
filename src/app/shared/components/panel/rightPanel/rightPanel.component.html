@@ -1,3 +1,13 @@
-<div >
-  <app-checkbox  [optionsCheckbox] = "questionsList"  (counterChange)="onCheckboxChange($event)"></app-checkbox>
+<div>
+  @if (checkboxKey) {
+    <app-checkbox
+      [optionsCheckbox]="questionsList"
+      (counterChange)="onCheckboxChange($event)">
+    </app-checkbox>
+  } @else {
+    <app-checkbox
+      [optionsCheckbox]="questionsList"
+      (counterChange)="onCheckboxChange($event)">
+    </app-checkbox>
+  }
 </div>
