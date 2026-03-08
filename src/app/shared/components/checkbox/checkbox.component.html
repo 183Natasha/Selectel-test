@@ -1,15 +1,15 @@
 <div class="checkbox-container">
   <div class="checkbox-item">
     @if (optionsCheckbox && optionsCheckbox.length > 0) {
-    @for (option of optionsCheckbox; track option.data) {
-    <label>
-      <input type="checkbox" [value]="option.data" (change)= checkStatus(option) >
-      {{ option.label }}
-      <div class="checkbox_value">Value: {{ option.value }}</div>
-    </label>
-    }
+      @for (option of optionsCheckbox; track option.id) {
+        <label>
+          <input type="checkbox" (change)="checkStatus(option)" />
+          {{ option.label }}
+          <div class="checkbox_value">Value: {{ option.value }}</div>
+        </label>
+      }
     } @else {
-    <p>Для отображения данных выберите название раздела в левой панеле</p>
+      <p>Для отображения данных выберите название раздела в левой панеле</p>
     }
   </div>
 </div>

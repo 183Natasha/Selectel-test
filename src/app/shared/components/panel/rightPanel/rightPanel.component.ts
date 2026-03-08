@@ -6,6 +6,7 @@ import {
   OnChanges,
 } from '@angular/core';
 import { CheckboxComponent } from '../../checkbox/checkbox.component';
+import questions from './data.json';
 
 @Component({
   selector: 'app-right-panel',
@@ -17,19 +18,9 @@ export class RightPanel implements OnChanges {
   section = input<string>();
   addCountEvent = output<{ counter: number; totalValue: number }>();
 
-  questions1 = [
-    { data: '1', label: 'Task 1', value: 10, status: false },
-    { data: '2', label: 'Task 2', value: 20, status: false },
-  ];
-
-  questions2 = [
-    { data: '3', label: 'Task 3', value: 30, status: false },
-    { data: '4', label: 'Task 4', value: 40, status: false },
-    { data: '5', label: 'Task 5', value: 50, status: false },
-    { data: '6', label: 'Task 6', value: 60, status: false },
-  ];
-
   checkboxKey = 0;
+  questions1 = questions.test1;
+  questions2 = questions.test2;
 
   get questionsList() {
     if (this.section() === '1') {
