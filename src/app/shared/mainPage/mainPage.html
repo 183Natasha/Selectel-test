@@ -1,0 +1,21 @@
+<header>
+  <div class="header__container">
+    <div class="section">
+      <div>Раздел: {{section}} </div>
+    </div>
+    <div class="points">
+      <div class="selected__items">
+        <div>Выбрано пунктов: {{countSelectedItems}}</div>
+      </div>
+      <div class="general__value">
+        <div>Общее значение: {{generalValue}}</div>
+      </div>
+    </div>
+  </div>
+
+</header>
+<div class="container">
+  <app-left-panel class="left__panel" (addItemEvent)="addItem($event)" ></app-left-panel>
+  <app-right-panel class="right__panel" [section]="section" (addCountEvent)="addCount($event)" ></app-right-panel>
+</div>
+

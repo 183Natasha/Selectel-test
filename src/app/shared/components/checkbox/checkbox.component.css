@@ -1,0 +1,8 @@
+.checkbox-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox_value{
+  padding-left: 25px;
+}

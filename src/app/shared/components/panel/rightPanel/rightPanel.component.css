@@ -1,0 +1,7 @@
+.right__panel{
+  border-left: 1px solid black;
+  padding: 10px;
+  background-color: rgb(193, 198, 202);
+  box-sizing: border-box;
+  flex: 1 1 auto;
+}
