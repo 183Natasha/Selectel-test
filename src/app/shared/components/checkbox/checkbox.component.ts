@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-checkbox',
@@ -6,23 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './checkbox.component.css'
 })
 export class CheckboxComponent {
-  optionsCheckbox: { value: string, label: string }[] = [];
+  @Input() optionsCheckbox: { data: string, label: string, value: number }[] = [];
+
   selectedOption: string = '';
-  isVisible: boolean = true
-
-  // if(isVisible) {
-  //   optionsCheckbox = [
-  //     { value: '1', label: 'Тест 1' },
-  //     { value: '2', label: 'Тест 2' },
-  //   ];
-  // }else{
-  // optionsCheckbox = [
-  //   { value: '3', label: 'Тест 3' },
-  //   { value: '4', label: 'Тест 4' },
-  // }
-
-
-  toggleVisibility() {
-    this.isVisible = !this.isVisible;
-  }
 }

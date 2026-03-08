@@ -1,13 +1,15 @@
 <div class="checkbox-container">
   <div class="checkbox-item">
-    @for (option of optionsCheckbox; track option.value) {
+    @if (optionsCheckbox && optionsCheckbox.length > 0) {
+    @for (option of optionsCheckbox; track option.data) {
     <label>
-      <input type="checkbox" name="optionGroup" [value]="option.value" >
+      <input type="checkbox" [value]="option.data">
       {{ option.label }}
+      <div class="checkbox_value">Value: {{ option.value }}</div>
     </label>
     }
+    } @else {
+    <p>Нет данных для отображения</p>
+    }
   </div>
-  <button (click)=toggleVisibility() >button</button>
-  <div [hidden]="!isVisible">Контент виден</div>
-
 </div>
