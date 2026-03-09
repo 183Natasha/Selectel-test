@@ -1,10 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
   font-family: 'Manrope';
-  /* Придумай название */
   src: url('/font/web/Manrope-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  /* Чтобы текст не пропадал при загрузке */
+}
+
+:root {
+  /* фирменные цвета из брендбука */
+  --signa-red: #eb4247;
+  --text-black: #1C1F21;
+  --data-blue: #092433;
+  --cool-gray: #ccd1d5;
+  --light-gray: #e0e2e4;
+  --dark-gray: #aaadaf;
+  --blue: #2181b7;
+  --white: #fff;
+  --Manrope: 'Manrope', sans-serif;
 }

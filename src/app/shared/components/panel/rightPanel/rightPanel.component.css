@@ -1,7 +1,7 @@
-.right__panel{
-  border-left: 1px solid black;
+.right__panel {
+  border-left: 1px solid var(--text-black);
   padding: 10px;
-  background-color: rgb(193, 198, 202);
+  background-color: var(--cool-gray);
   box-sizing: border-box;
   flex: 1 1 auto;
 }
