@@ -115,3 +115,13 @@ body {
     max-width: 150px;
   }
 }
+
+@media (max-width: 450px) {
+  .card {
+    width: 280px;
+  }
+
+  .left__panel {
+    max-width: 115px;
+  }
+}
